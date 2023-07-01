@@ -114,20 +114,22 @@ function subtraction(a, b) {
 function multiplication(a, b) {
     secondNumber = a * b
     firstNumber = undefined
-
-    return display.textContent = secondNumber;
-}
-
-function division(a, b) {
-    secondNumber = a / b
-    firstNumber = undefined
-
+    //Added limit when number is too large writes it in scientific notation (exponential notation)
     if (secondNumber.toString().length > 7) {
-        return display.textContent = secondNumber.toFixed(7)
+        return display.textContent = secondNumber.toExponential(5)
     } else {
 
         return display.textContent = secondNumber;
     }
 
+}
 
+function division(a, b) {
+    secondNumber = a / b
+    firstNumber = undefined
+    if (secondNumber.toString().length > 7) {
+        return display.textContent = secondNumber.toFixed(7)
+    } else {
+        return display.textContent = secondNumber;
+    }
 }
