@@ -5,6 +5,7 @@ let clearButton = document.querySelector('.clear');
 let operators = document.querySelectorAll('.operator');
 let equal = document.querySelector('.equal');
 let comma = document.querySelector('.comma')
+let backspace = document.querySelector('.backspace')
 let firstNumber;
 let secondNumber;
 let operator;
@@ -22,6 +23,15 @@ clearButton.addEventListener('click', () => {
     firstNumber = 0;
     secondNumber = 0;
 });
+
+/* Backspace button */
+backspace.addEventListener('click', () => {
+    let number = display.textContent
+    let newNumber = number.slice(0, -1);
+    display.textContent = newNumber
+    secondNumber = newNumber
+
+})
 
 /* It catches the operator clicking */
 operators.forEach((operator) => {
