@@ -26,10 +26,17 @@ clearButton.addEventListener('click', () => {
 
 /* Backspace button */
 backspace.addEventListener('click', () => {
+    if (display.textContent[0] == '0') return
+
     let number = display.textContent
     let newNumber = number.slice(0, -1);
-    display.textContent = newNumber
-    secondNumber = newNumber
+    if (newNumber.length == 0) {
+        display.textContent = '0'
+        secondNumber = newNumber
+    } else {
+        display.textContent = newNumber
+        secondNumber = newNumber
+    }
 
 })
 
