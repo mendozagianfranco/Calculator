@@ -51,18 +51,16 @@ body {
     font-size: 2rem;
 }
 
-.equal {
-    grid-column: span 4;
-}
-
 .number,
 .comma,
 .equal {
     background: #044cd0;
 }
 
-.delete {
+.clear,
+.backspace {
     background: #d72503;
+    grid-column: span 2;
 }
 
 .operator {

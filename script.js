@@ -1,7 +1,7 @@
 /* Variables */
 let display = document.querySelector('.screen');
 let numbers = document.querySelectorAll('.number');
-let deleteButton = document.querySelector('.delete');
+let clearButton = document.querySelector('.clear');
 let operators = document.querySelectorAll('.operator');
 let equal = document.querySelector('.equal');
 let comma = document.querySelector('.comma')
@@ -16,8 +16,8 @@ numbers.forEach((number) => {
     number.addEventListener('click', showNumbersOnDisplay);
 });
 
-/* Delete button */
-deleteButton.addEventListener('click', () => {
+/* Clear button */
+clearButton.addEventListener('click', () => {
     display.textContent = '0';
     firstNumber = 0;
     secondNumber = 0;

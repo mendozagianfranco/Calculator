@@ -5,11 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Calculator</title>
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
         <div class="container">
             <div class="screen">0</div>
             <div class="buttons">
+                <button class="clear">C</button>
+                <button class="backspace">
+                    <i class="fa fa-backspace"></i>
+                </button>
                 <button class="number">7</button>
                 <button class="number">8</button>
                 <button class="number">9</button>
@@ -22,11 +33,10 @@
                 <button class="number">2</button>
                 <button class="number">3</button>
                 <button class="subtraction operator">-</button>
-                <button class="delete">C</button>
-                <button class="number">0</button>
                 <button class="number comma">.</button>
-                <button class="addition operator">+</button>
+                <button class="number">0</button>
                 <button class="equal">=</button>
+                <button class="addition operator">+</button>
             </div>
         </div>
         <script src="./script.js"></script>
